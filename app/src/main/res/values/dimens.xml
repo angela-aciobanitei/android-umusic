@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="album_list_item_height">72dp</dimen>
+    <dimen name="album_list_item_image_margin_start">12dp</dimen>
+    <dimen name="album_list_item_image_margin_end">12dp</dimen>
+    <dimen name="album_list_item_text_margin_start">60dp</dimen>
+    <dimen name="album_list_item_text_padding_start">12dp</dimen>
+    <dimen name="album_list_item_text_padding_end">12dp</dimen>
+    <dimen name="song_list_item_image_size">64dp</dimen>
+    <dimen name="song_list_item_text_margin_start">8dp</dimen>
+    <dimen name="song_list_item_play_pause_padding">8dp</dimen>
+    <dimen name="details_song_artist_margin_bottom">32dp</dimen>
+    <dimen name="details_seekbar_margin">5dp</dimen>
+    <dimen name="details_text_view_margin_start">16dp</dimen>
+    <dimen name="details_text_view_margin_end">16dp</dimen>
+    <dimen name="details_playback_controls_height">48dp</dimen>
+
+</resources>

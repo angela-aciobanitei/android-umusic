@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/song_image"
+        android:src="@drawable/ic_default_image"
+        android:layout_width="@dimen/song_list_item_image_size"
+        android:layout_height="@dimen/song_list_item_image_size"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/song_list_item_image_desc" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/song_list_item_text_margin_start"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/song_image"
+        android:layout_toStartOf="@+id/play_pause"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/song_title"
+            tools:text="The Best Music"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/song_artist"
+            tools:text="John Doe and Band"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/play_pause"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/song_list_item_play_pause_padding"
+        android:layout_alignParentEnd="true"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_play_arrow_black_36dp"
+        android:tint="@android:color/darker_gray"
+        android:contentDescription="@string/song_list_item_play_button_desc" />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.acb.angela.umusic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.AlbumListActivity"
+            android:label="@string/album_list_activity_label"
+            android:parentActivityName=".ui.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acb.angela.umusic.ui.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.SongListActivity"
+            android:label="@string/song_list_activity_label"
+            android:parentActivityName=".ui.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acb.angela.umusic.ui.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.SongDetailsActivity"
+            android:label="@string/song_details_activity_label"
+            android:parentActivityName=".ui.SongListActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acb.angela.umusic.ui.SongListActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.PlaylistsActivity"
+            android:label="@string/playlists_activity_label"
+            android:parentActivityName=".ui.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acb.angela.umusic.ui.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".ui.FavouritesListActivity"
+            android:label="@string/favourites_list_activity_label"
+            android:parentActivityName=".ui.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acb.angela.umusic.ui.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

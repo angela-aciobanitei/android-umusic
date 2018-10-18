@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">UMusic</string>
+    <string name="category_albums">Albums</string>
+    <string name="category_tracks">Tracks</string>
+    <string name="category_playlists">Playlists</string>
+    <string name="category_favourites">Favourites</string>
+    <string name="duration_start">0:33</string>
+    <string name="duration_end">03:33</string>
+    <string name="song_list_activity_label">Song List</string>
+    <string name="playlists_activity_label">Playlists</string>
+    <string name="song_details_activity_label">Song Details</string>
+    <string name="album_list_activity_label">Album List</string>
+    <string name="favourites_list_activity_label">Favourites List</string>
+    <string name="album_list_item_image">Album list item image</string>
+    <string name="skip_prev_content_desc">Skip to previous song</string>
+    <string name="play_pause_content_desc">Play or Pause</string>
+    <string name="skip_next_content_desc">Skip to next song</string>
+    <string name="song_list_item_image_desc">Song list item image</string>
+    <string name="song_list_item_play_button_desc">Song list item play button</string>
+    <string name="main_background_image">Main background image</string>
+    <string name="album_title">Album Title</string>
+    <string name="album_artist">Album Artist</string>
+    <string name="favourites_detail_activity_label">FavouritesDetailsActivity</string>
+</resources>

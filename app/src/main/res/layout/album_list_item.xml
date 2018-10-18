@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/album_list_item_height">
+
+    <ImageView
+        android:id="@+id/album_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/album_list_item_image_margin_start"
+        android:layout_marginEnd="@dimen/album_list_item_image_margin_end"
+        android:src="@drawable/ic_album"
+        android:tint="@color/colorPrimary"
+        android:contentDescription="@string/album_list_item_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/album_list_item_text_margin_start"
+        android:paddingStart="@dimen/album_list_item_text_padding_start"
+        android:paddingEnd="@dimen/album_list_item_text_padding_end"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/album_title"
+            tools:text="Best Album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="?android:attr/textColorPrimary"/>
+
+        <TextView
+            android:id="@+id/album_artist"
+            tools:text="John Doe Band"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorSecondary"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
